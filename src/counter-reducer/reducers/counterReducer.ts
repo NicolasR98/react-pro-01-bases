@@ -1,8 +1,5 @@
-import { CounterState } from '../bases/CounterWithReducer';
-
-type CounterAction =
-    | { type: 'increaseBy', payload: { value: number } }
-    | { type: 'reset' }
+import { CounterState } from '../interfaces/interfaces';
+import { CounterAction } from '../actions/actions';
 
 const INITIAL_STATE: CounterState = {
   counter: 0,
